@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polytechnic CMS | Diploma College Management System</title>
+    <meta name="description" content="Enterprise College Management System for Diploma Engineering Institutions with role-based governance, QR attendance, assignments, and results." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233F5224'><path d='M12 2L1 7l11 5 9-4.09V17h2V7L12 2z'/><path d='M11 12.5v5.5a1 1 0 002 0v-5.5' opacity='0.7'/></svg>" />
+  </head>
+  <body>
+    <!-- Hidden SVG Refraction & Distortion Filters for Liquid Glass Effects -->
+    <svg style="position: absolute; width: 0; height: 0; pointer-events: none; overflow: hidden;" aria-hidden="true">
+      <defs>
+        <filter id="liquid-refraction" x="-20%" y="-20%" width="140%" height="140%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <filter id="liquid-glass-glow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="12" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+    </svg>
+    <div id="root">
+      <!-- Fallback when opened directly via file:/// instead of http://localhost:5173 -->
+      <div id="file-protocol-helper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1B2412; color: #F7F6EF; text-align: center;">
+        <div style="max-width: 540px; width: 100%; background: rgba(255, 255, 255, 0.08); border: 1px solid #B9C9A8; border-radius: 20px; padding: 32px 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); backdrop-filter: blur(20px);">
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, #3F5224 0%, #9DB28A 100%); margin-bottom: 18px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/><path d="M11 12.5v5.5a1 1 0 002 0v-5.5" opacity="0.7"/></svg>
+          </div>
+          <h2 style="font-size: 1.5rem; margin-bottom: 8px; color: #F7F6EF; letter-spacing: 0.02em;">DIPLOMA COLLEGE MANAGEMENT SYSTEM</h2>
+          <p style="font-size: 0.95rem; color: rgba(247, 246, 239, 0.85); margin-bottom: 22px; line-height: 1.5;">
+            આ React + Django પ્રોજેક્ટ છે. બ્રાઉઝરમાં જોવા માટે નીચેના બટન પર ક્લિક કરો અથવા ફોલ્ડરમાં રહેલી <strong>Start_Servers.bat</strong> ફાઈલ રન કરો.
+          </p>
+          <a href="http://localhost:5173" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #9DB28A; color: #1B2412; font-weight: 700; font-size: 0.95rem; padding: 14px 28px; border-radius: 9999px; text-decoration: none; box-shadow: 0 4px 18px rgba(157, 178, 138, 0.4); margin-bottom: 14px;">
+            🌐 Open Live Website (http://localhost:5173)
+          </a>
+          <div style="font-size: 0.82rem; color: rgba(247, 246, 239, 0.65); border-top: 1px solid rgba(185, 201, 168, 0.25); padding-top: 14px; margin-top: 10px;">
+            💡 <strong>ટિપ:</strong> જો સાઈટ ન ખુલે, તો પ્રોજેક્ટ ફોલ્ડરમાંથી <strong>Start_Servers.bat</strong> ફાઈલ પર ડબલ-ક્લિક કરો.
+          </div>
+        </div>
+      </div>
+      <script>
+        if (window.location.protocol === 'file:') {
+          fetch('http://localhost:5173/', { mode: 'no-cors' })
+            .then(function() {
+              window.location.href = 'http://localhost:5173/';
+            })
+            .catch(function() {});
+        }
+      </script>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
